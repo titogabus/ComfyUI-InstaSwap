@@ -72,7 +72,7 @@ if not os.path.exists(model_path):
 
 with open(req_file) as file:
     try:
-        onxx = "onnxruntime-gpu"
+        onxx = "onnxruntime"
         import torch
         if torch.backends.mps.is_available() or hasattr(torch,'dml'):
             onxx = "onnxruntime"
